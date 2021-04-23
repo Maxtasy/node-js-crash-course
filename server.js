@@ -1,17 +1,21 @@
 const http = require("http")
 const fs = require("fs")
+const _ = require("lodash")
 
 const server = http.createServer((req, res) => {
-  console.log(req.url, req.method)
+  // lodash
+  const num = _.random(1, 100)
+  console.log(num)
+
+  const greet = _.once(() => {
+    console.log("hello")
+  })
+
+  greet()
+  greet()
 
   // Set header content type
   res.setHeader("Content-Type", "text/html")
-
-  // Send raw text/html
-  // res.write("<head><link rel='stylesheet' href='#'></head>")
-  // res.write("<p>hello world</p>")
-  // res.write("<p>hello again world</p>")
-  // res.end()
 
   let path = "./views/"
 
