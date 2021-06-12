@@ -2,10 +2,10 @@
   "name": "js-crash-course",
   "version": "1.0.0",
   "description": "[Node.js Crash Course by The Net Ninja](https://www.youtube.com/watch?v=OIBIXYLJjsI&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU&index=1) (Code-along)",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "node app.js",
     "devStart": "nodemon app.js"
   },
   "repository": {

@@ -3,6 +3,9 @@ const express = require("express");
 // express app
 const app = express();
 
+// set public directory from which we are serving the static files
+app.use(express.static(__dirname + "/public"));
+
 // register view engine
 app.set("view engine", "ejs");
 
